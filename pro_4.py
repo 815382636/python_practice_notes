@@ -98,3 +98,16 @@ print('type of original_params = {}, original_params = {}'.format(type(original_
 
 
 #剩下两个问题，谷歌工具Protocol Buffer和  如何读取大信息量的文件
+
+#读取大文件
+
+large_size =100
+
+with open("in.txt","r")as fin:
+    text =""
+    while True:
+        str =fin.read(large_size)
+        if not str:
+            break
+        text +=str
+    # print(text)
