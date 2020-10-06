@@ -23,10 +23,10 @@ se.add(4)
 se.remove(3)
 print(se)
 
-# 字典的升序排列
+# 字典通过key排序
 d_sorted_by_key =sorted(di.items(),key= lambda x:x[0])
 print(d_sorted_by_key)
-# 字典的降序排列 ，集合直接用sorted即可
+# 字典通过value排序
 d_sorted_by_key =sorted(di.items(),key= lambda x:x[1])
 print(d_sorted_by_key)
 
